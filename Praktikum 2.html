@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Praktikum 2</title>
+    </head>
+
+    <script language="javascript">
+        function tambah(){
+            var a = document.kirim.T1.value
+            var b = document.kirim.T2.value
+            document.kirim.T3.value = parseInt(a)+parseInt(b)
+        }
+        function kurang(){
+            var a = document.kirim.T1.value
+            var b = document.kirim.T2.value
+            document.kirim.T3.value = parseInt(a)-parseInt(b)
+        }
+        function kali(){
+            var a = document.kirim.T1.value
+            var b = document.kirim.T2.value
+            document.kirim.T3.value = parseInt(a)*parseInt(b)
+        }
+        function bagi(){
+            var a = document.kirim.T1.value
+            var b = document.kirim.T2.value
+            document.kirim.T3.value = parseInt(a)/parseInt(b)
+        }
+
+    </script>
+
+    <body>
+            <form method="POST" name="kirim">
+            <p>Bil 1 <input type="number" name="T1" size="20"><br></p>
+            <p>Bil 2 <input type="number" name="T2" size="20"><br></p>
+            <p>Hasil <input type="number" name="T3" size="20"></p>
+                <input type="button" value="+" name="B1" onclick="tambah()">
+                <input type="button" value="-" name="B1" onclick="kurang()">
+                <input type="button" value="*" name="B1" onclick="kali()">
+                <input type="button" value="/" name="B1" onclick="bagi()">
+
+
+    </body>
+</html>
